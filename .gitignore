@@ -1,10 +1,8 @@
+_build/
+site-src/node_modules/
+site-src/.astro/
+site-src/dist/
 enum/
-render*.py
-render*.log
-rewrite.py
-verify_*.png
-verify_shot.py
-asset_map.json
-page_map.json
 __pycache__/
 *.pyc
+.DS_Store

@@ -1,0 +1,66 @@
+---
+import { getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+const entry = await getEntry('services', 'sap-services');
+if (!entry) throw new Error('services/sap-services not found');
+const { data } = entry;
+const { Content } = await entry.render();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title={`${data.title} — Steel Cloud Solutions`} description={data.description} active="sap">
+  <section class="hero">
+    <div class="wrap">
+      {data.hero_eyebrow && <div class="eyebrow">{data.hero_eyebrow}</div>}
+      <h1>{data.hero_title}</h1>
+      {data.hero_subtitle && <p>{data.hero_subtitle}</p>}
+      <a class="cta" href={`${base}${data.cta_href}`}>{data.cta_label}</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-eyebrow">What you get</div>
+      <h2 class="section-title">The engagement, in four proof points</h2>
+      <div class="proof-grid">
+        {data.proof_points.map(p => (
+          <div class="proof-card">
+            <h3>{p.title}</h3>
+            <p>{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-eyebrow">How it works</div>
+      <h2 class="section-title">The Claude-driven engagement model</h2>
+      <div class="steps">
+        {data.engagement_model.map((s, i) => (
+          <div class="step">
+            <div class="num">{String(i + 1).padStart(2, '0')}</div>
+            <div>
+              <h3>{s.step}</h3>
+              <p>{s.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap prose">
+      <Content />
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Ready to see it against your program?</h2>
+      <p>A single working session produces a written engagement brief the same day.</p>
+      <p style="margin-top:1.5rem"><a class="cta" href={`${base}${data.cta_href}`}>{data.cta_label}</a></p>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Steel Cloud Solutions — Intelligent Automation Experts" active="home">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">SAP + Salesforce channel partner</div>
+      <h1><span class="red">Intelligent</span> Automation Experts</h1>
+      <p>Claude and Perplexity front-end. Two decades of client-side SAP heritage. A gold-partner delivery center in Hyderabad. Fixed-price, deliverable-scoped, exit-friendly work — because most of what you need, we have already built.</p>
+      <a class="cta" href={`${base}/sap-services`}>See our SAP services</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-eyebrow">What we do</div>
+      <h2 class="section-title">Channel partner services, scoped to deliverables</h2>
+      <div class="proof-grid">
+        <div class="proof-card">
+          <h3>SAP Services</h3>
+          <p>AI-accelerated advisory, blueprint, and delivery — starting from a project mirror of your existing program. <a href={`${base}/sap-services`}>Read more →</a></p>
+        </div>
+        <div class="proof-card">
+          <h3>CPQ Migration</h3>
+          <p>Salesforce CPQ to Revenue Cloud, unmatched speed and accuracy. <em>(Mirror page: <a href={`${base}/../mirror/cpq-migration/`}>view current</a>)</em></p>
+        </div>
+        <div class="proof-card">
+          <h3>Pre-sales &amp; demonstration support</h3>
+          <p>We stand up demo models fast. SIs, SAP account teams, or the customer directly — same engagement model.</p>
+        </div>
+        <div class="proof-card">
+          <h3>Hyderabad development center</h3>
+          <p>Gold-partner delivery, piece-by-piece, fixed price. Known team, direct escalation path, low resource risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>The rebuild lane</h2>
+      <p style="max-width:720px;margin:0 auto 1rem">You're looking at the editable rebuild of steelcloudsolutions.com. The frozen byte-faithful mirror is <a href={`${base}/../mirror/`} style="color:#fff;text-decoration:underline">here</a>. All future marketing edits happen against this lane.</p>
+    </div>
+  </section>
+</Base>

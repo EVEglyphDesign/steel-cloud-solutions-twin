@@ -105,4 +105,12 @@ Deleted (from prior build, not from repo):
 - [ ] `/mirror/` still loads unchanged (frozen)
 
 ## Status
-`in-progress` — pending commit + push + public URL verification.
+
+`merged` — commit `ab195c9ac4c292321e76d0870e961aa668366987`
+
+Pages build: `built` (verified via `gh api /repos/.../pages/builds`).
+
+All 7 public URLs return 200. Corrected eyebrow verified live via `curl | grep`.
+'not an SAP channel partner' disclaimer present on SAP Services page.
+Zero leftover 'SAP + Salesforce channel partner' overclaims on home.
+Preview ribbon renders. Home screenshot captured and reviewed.

@@ -1,9 +1,8 @@
 _build/
-site-src/node_modules/
-site-src/.astro/
-site-src/dist/
 enum/
 __pycache__/
 *.pyc
 .DS_Store
-site-src/
+node_modules/
+.astro/
+*.tmp

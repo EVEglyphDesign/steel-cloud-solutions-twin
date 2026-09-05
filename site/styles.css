@@ -264,6 +264,93 @@ p.lede-section {
   .service-grid { grid-template-columns: 1fr; }
 }
 
+/* Callout — pull-quote style for a named argument */
+.callout {
+  border: 1px solid var(--scs-line);
+  border-left: 4px solid var(--scs-red);
+  background: white;
+  padding: 28px 32px;
+  margin: 32px 0 8px;
+}
+.callout .callout-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  color: var(--scs-red);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.callout h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--scs-dark);
+}
+.callout p {
+  font-size: 15px;
+  color: var(--scs-charcoal);
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+/* Numbered service block — for methodology page long-form sections */
+.svc-block {
+  padding: 40px 0;
+  border-top: 1px solid var(--scs-line);
+}
+.svc-block:first-of-type { border-top: none; padding-top: 8px; }
+.svc-block .num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--scs-red);
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+.svc-block h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.svc-block .svc-tag {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--scs-charcoal);
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  display: block;
+}
+.svc-block h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--scs-navy);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.svc-block p {
+  max-width: 780px;
+  margin-bottom: 12px;
+}
+.svc-block .deliverables {
+  background: var(--scs-cream);
+  border-left: 3px solid var(--scs-red);
+  padding: 16px 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--scs-charcoal);
+  line-height: 1.7;
+}
+.svc-block .deliverables strong {
+  color: var(--scs-navy);
+  font-family: var(--font-display);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
 /* Method / process */
 .section-method { background: var(--scs-dark); color: white; }
 .section-method h2 { color: white; }

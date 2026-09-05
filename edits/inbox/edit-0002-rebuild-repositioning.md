@@ -108,6 +108,15 @@ Deleted (from prior build, not from repo):
 
 `merged` — commit `ab195c9ac4c292321e76d0870e961aa668366987`
 
+Follow-on `0c4a7ca46e12be24a705c44dce667dde20d11062` — added `/site/methodology.html`
+(three DICOE service lines: DataSphere stand-up + US-fronted Gold-Partner Basis
+bench, EVE DI PMO structured repository + HITL protocol, Sovereign AI Reference
+Model). Added Methodology to nav on all four existing pages. Generic sector
+proof point on the marketing surface; named client stays in the private Jason
+doc only. Pages built, all 6 URLs 200, load-bearing phrases verified live via
+`curl | grep`. Home-page hero and SAP-services page copy deferred per operator
+ship-path decision.
+
 Pages build: `built` (verified via `gh api /repos/.../pages/builds`).
 
 All 7 public URLs return 200. Corrected eyebrow verified live via `curl | grep`.
